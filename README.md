@@ -1,7 +1,6 @@
 # Kowi Data Storage
 
 model-based storage using React Context with the power of Typescript 
-[Demo](https://)
 
 ## About the Context
 Context provides a way to pass data through the component tree without having to pass props down manually at every level.
