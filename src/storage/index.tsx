@@ -18,7 +18,7 @@ function getModelData(model: ModelName){
   if(!modelConfig.storage)
     return modelConfig.modelInitial;
 
-  const storageData = localStorage.getItem(model);
+  const storageData = typeof window !== 'undefined' ? localStorage.getItem(model) : null;
   return (storageData !== null && storageData !==  undefined) ? JSON.parse(storageData) : modelConfig.modelInitial;
 }
 
